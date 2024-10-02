@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+    <style>
+        .dropdown-menu {
+            width: 400px;
+
+        }
+
+        .coly {
+            float: left;
+
+        }
+
+        .navbar {
+            height: auto;
+        }
+
+        .content {
+            border-bottom-left-radius: 24%;
+            border-bottom-right-radius: 24%;
+        }
+
+        .hover:hover {
+            margin-top: -4px;
+
+        }
+
+        .row_image {
+            background-color: white;
+            height: auto;
+
+        }
+
+        .drop {
+            display: flex;
+        }
+
+        .drop i {
+            font-size: 32px;
+            background-color: rgb(161, 161, 235);
+            border-radius: 50%;
+            padding: 6px 12px;
+        }
+
+        #info {
+            border-bottom-left-radius: 24%;
+            border-bottom-right-radius: 24%;
+            border-top-left-radius: 24%;
+            border-top-right-radius: 24%;
+            background-color: gainsboro;
+            height: 199vb;
+
+        }
+
+        .list-group-item:hover {
+            background-color: #e9ecef;
+            /* Change background color on hover */
+            color: #495057;
+            /* Change text color on hover */
+        }
+
+        .bi {
+            float: right;
+        }
+
+        .display-1 {
+            font-weight: bold;
+            color: gainsboro;
+            font-size: 120px;
+        }
+
+        .milieu_container {
+            background-color: rgb(187, 181, 181);
+            border-bottom-left-radius: 24%;
+            border-bottom-right-radius: 24%;
+            border-top-left-radius: 24%;
+            border-top-right-radius: 24%;
+        }
+
+        .icon1 {
+
+            margin-left: -102px;
+        }
+
+        .icon1 a {
+            text-indent: 3px;
+
+        }
+
+        .a-last {
+            text-decoration: none;
+        }
+    </style>
+    <!--Navbar nav-->
+    <div class="bg-primary content container-fluid" id="home">
+        <div class="container-lg">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+                <a class="navbar-brand m-3 fw-bold text-white" href="#">SD UI Kit Pro</a>
+                <button class="navbar-toggler bg-success" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center   align-items-center" id="navbarNav">
+                    <ul class="navbar-nav ml-auto align-items-center">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link text-white fw-bolder">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <!--Dropdown-->
+                            <div class="dropdown">
+                                <button class="btn text-white fw-bolder outline-none  dropdown-toggle" type="button"
+                                    id="book-drodown" data-bs-toggle="dropdown">
+                                    Lanings
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="book-drodown">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h6 class="dropdown-header text-primary"><small>APPLICATION</small></h6>
+                                            <li><a class="dropdown-item text-muted" href="#"><small>Mobile
+                                                        App</small></a></li>
+                                            <li><a class="dropdown-item text-muted" href="#"><small>Disktop
+                                                        App</small></a></li>
+                                            <h6 class="dropdown-header text-primary"><small>BUSINESS</small></h6>
+                                            <li><a class="dropdown-item text-muted"
+                                                    href="#"><small>Multipurpose</small></a>
+                                            </li>
+                                            <li><a class="dropdown-item text-muted" href="#"><small>Agency</small></a>
+                                            </li>
+                                            <li><a class="dropdown-item text-muted" href="#"><small>Press</small></a>
+                                            </li>
+                                            <li><a class="dropdown-item text-muted"
+                                                    href="#"><small>Directory</small></a></li>
+                                            <li><a class="dropdown-item text-muted" href="#"><small>Rental</small></a>
+                                            </li>
+                                            <li><a class="dropdown-item text-muted" href="#"><small>Real
+                                                        Estats</small></a></li>
+                                            <li><a class="dropdown-item text-muted"
+                                                    href="#"><small>Claaifieds</small></a></li>
+                                            <h6 class="dropdown-header text-primary"><small>LEAD GENERATION</small></h6>
+                                            <li><a class="dropdown-item text-muted" href="#"><small>Lead
+                                                        Capture</small></a>
+                                            </li>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h6 class="dropdown-header text-primary">Personal</h6>
+                                            <li><a class="dropdown-item" href="#"><small>Resume</small></a></li>
+                                            <li><a class="dropdown-item" href="#"><small>Portfolio</small></a></li>
+
+                                            <h6 class="dropdown-header text-primary">Header</h6>
+                                            <li><a class="dropdown-item" href="#"><small>Basic</small></a></li>
+                                            <li><a class="dropdown-item" href="#"><small>Basic (signuo)</small></a></li>
+                                            <li><a class="dropdown-item" href="#"><small>Graphic</small></a></li>
+                                            <li><a class="dropdown-item" href="#"><small>Graphic (signuo)</small></a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#"><small>Inner Page</small></a></li>
+                                            <li><a class="dropdown-item" href="#"><small>Nav Only</small></a></li>
+
+
+                                        </div>
+
+                                    </div>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn text-white fw-bolder outline-none  dropdown-toggle" type="button"
+                                    id="book-drodown" data-bs-toggle="dropdown">
+                                    Pages
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="book-drodown">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h6 class="dropdown-header text-primary"><small>APPLICATION</small></h6>
+                                            <li><a class="dropdown-item text-muted" href="#"><small>Mobile
+                                                        App</small></a></li>
+                                            <li><a class="dropdown-item text-muted" href="#"><small>Disktop
+                                                        App</small></a></li>
+                                            <h6 class="dropdown-header text-primary"><small>BUSINESS</small></h6>
+                                            <li><a class="dropdown-item text-muted"
+                                                    href="#"><small>Multipurpose</small></a>
+                                            </li>
+                                            <li><a class="dropdown-item text-muted" href="#"><small>Agency</small></a>
+                                            </li>
+                                            <li><a class="dropdown-item text-muted" href="#"><small>Press</small></a>
+                                            </li>
+                                            <li><a class="dropdown-item text-muted"
+                                                    href="#"><small>Directory</small></a></li>
+                                            <li><a class="dropdown-item text-muted" href="#"><small>Rental</small></a>
+                                            </li>
+                                            <li><a class="dropdown-item text-muted" href="#"><small>Real
+                                                        Estats</small></a></li>
+                                            <li><a class="dropdown-item text-muted"
+                                                    href="#"><small>Claaifieds</small></a></li>
+                                            <h6 class="dropdown-header text-primary"><small>LEAD GENERATION</small></h6>
+                                            <li><a class="dropdown-item text-muted" href="#"><small>Lead
+                                                        Capture</small></a>
+                                            </li>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h6 class="dropdown-header text-primary">Personal</h6>
+                                            <li><a class="dropdown-item" href="#"><small>Resume</small></a></li>
+                                            <li><a class="dropdown-item" href="#"><small>Portfolio</small></a></li>
+
+                                            <h6 class="dropdown-header text-primary">Header</h6>
+                                            <li><a class="dropdown-item" href="#"><small>Basic</small></a></li>
+                                            <li><a class="dropdown-item" href="#"><small>Basic (signuo)</small></a></li>
+                                            <li><a class="dropdown-item" href="#"><small>Graphic</small></a></li>
+                                            <li><a class="dropdown-item" href="#"><small>Graphic (signuo)</small></a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#"><small>Inner Page</small></a></li>
+                                            <li><a class="dropdown-item" href="#"><small>Nav Only</small></a></li>
+
+
+                                        </div>
+
+                                    </div>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn text-white fw-bolder outline-none  dropdown-toggle" type="button"
+                                    id="book-drodown" data-bs-toggle="dropdown">
+                                    Documentation
+                                </button>
+                                <ul class="dropdown-menu mt-4" aria-labelledby="book-drodown">
+                                    <div class="drop mt-3">
+                                        <li><a class="" href=""><i class="bi bi-book"></i></a></li>
+                                        <li><a href="" class="dropdown-item text-muted">Documentation</a>
+                                            <a class="dropdown-item" href=""> Usage instruction and reference</a>
+                                        </li>
+                                    </div>
+                                    <div class="drop mt-3">
+
+                                        <li><a class="" href=""><i class="bi bi-code-slash"></i></a></li>
+                                        <li><a href="" class="dropdown-item text-muted">Create a page</a>
+                                            <a href="" class="dropdown-item">Levelling up your Next.js</a>
+                                        </li>
+
+                                    </div>
+                                    <div class="drop mt-3">
+
+                                        <li><a class="" href=""><i class="bi bi-file-earmark-arrow-down-fill"></i></a>
+                                        </li>
+                                        <li><a href="" class="dropdown-item text-muted">Changelog</a>
+                                            <a href="" class="dropdown-item">Updates and change</a>
+                                        </li>
+
+                                    </div>
+                                </ul>
+                            </div>
+                        </li>
+                        &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;
+                        <li class="nav-item ms-2 d-none d-md-inline">
+                            <a href="#pricing"
+                                class="nav-link btn btn-dark text-white bg-success float-end rounded-pill text-white fw-bolder px-4 ml-lg-4">Buy
+                                now <i class="bi bi-arrow-right-short fw-bold"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <br><br><br>
+            <div class="row my-5  justify-content-around align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="fw-bold text-white">Build your next project faster with SB UI Kit Pro</h1>
+                    <p class="lead text-white">
+                        Welcome to SB UI Kit Pro, a toolkit for building beautiful web interfaces,
+                        created by the developmet team at Start Bootstrap
+                    </p>
+
+                    <ul class="navbar-nav coly ">
+                        <li class="nav-item">
+                            <a href="#pricing"
+                                class="nav-link btn btn-dark text-white bg-success float-end rounded-pill text-white fw-bolder px-4 ml-lg-4 p-2 m-3">Buy
+                                now <i class="bi bi-arrow-right-short fw-bold"></i> </a>
+
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav coly p-2 m-3">
+                        <li class="nav-item">
+                            <a href="#documentation" class="nav-link text-white">Documentation <i
+                                    class="bi bi-arrow-right-short fw-bold"></i></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="col-6  ">
+                    <img class="img-fluid" src="image/m1.svg" alt="">
+                </div>
+            </div>
+            <br>
+
+        </div>
+    </div>
+    <div class="container-fluid row_image">
+        <div class="container-sm align-items-center  justify-content-center mt-5 text-center ">
+            <p class=" justify-content-center align-items-center text-center text-white "><small
+                    class="bg-info px-3 p-1  rounded-pill">12 Demos! </small></p>
+            <h3>Landing Pages</h3>
+            <p class=" lead text-muted text-center">When you purchase this UI Kit, you get access to a robust
+                of powerful <br> landing page demos to help you get started.</p>
+        </div>
+
+        <div class="row my-5 text-center   justify-content-around align-items-center">
+            <div class="col-6 col-lg-4 hover">
+                <h4 class="">Demo 1 - Multipurpose</h4>
+                <p><img class="img-fluid    shadow-lg rounded" src="image/t1.jpg " alt=""></p>
+
+            </div>
+            <div class="col-6 col-lg-4 hover">
+                <h4 class="">Demo 2 - Mobile App</h4>
+                <p><img class="img-fluid  shadow-lg rounded" src="image/t2.jpg " alt=""></p>
+
+            </div>
+            <div class="col-6 col-lg-4 hover">
+                <h4 class="">Demo 3 - Desktop App</h4>
+                <p><img class="img-fluid  shadow-lg rounded" src="image/t3.jpg " alt=""></p>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="row my-5 text-center   justify-content-around align-items-center">
+            <div class="col-6 col-lg-4 hover">
+                <h4 class="">Demo 4 - Agency</h4>
+                <p><img class="img-fluid    shadow-lg rounded" src="image/t4.jpg " alt=""></p>
+
+            </div>
+            <div class="col-6 col-lg-4 hover">
+                <h4 class="">Demo 5 - Lead Capture</h4>
+                <p><img class="img-fluid  shadow-lg rounded" src="image/t5.jpg " alt=""></p>
+
+            </div>
+            <div class="col-6 col-lg-4 hover">
+                <h4 class="">Demo 6 - Press</h4>
+                <p><img class="img-fluid  shadow-lg rounded" src="image/t6.jpg " alt=""></p>
+
+            </div>
+        </div>
+
+
+
+        <div class="row my-5 text-center   justify-content-around align-items-center">
+            <div class="col-6 col-lg-4 hover">
+                <h4 class="">Demo 7 - Directory</h4>
+                <p><img class="img-fluid    shadow-lg rounded" src="image/t7.jpg " alt=""></p>
+
+            </div>
+            <div class="col-6 col-lg-4 hover">
+                <h4 class="">Demo 8 - Rental</h4>
+                <p><img class="img-fluid  shadow-lg rounded" src="image/t8.jpg " alt=""></p>
+
+            </div>
+            <div class="col-6 col-lg-4 hover">
+                <h4 class="">Demo 9 - Real Estate</h4>
+                <p><img class="img-fluid  shadow-lg rounded" src="image/t9.jpg " alt=""></p>
+
+            </div>
+        </div>
+
+
+
+        <div class="row my-5 text-center   justify-content-around align-items-center">
+            <div class="col-6 col-lg-4 hover">
+                <h4 class="">Demo 10 - Classifieds</h4>
+                <p><img class="img-fluid    shadow-lg rounded" src="image/t10.jpg " alt=""></p>
+
+            </div>
+            <div class="col-6 col-lg-4 hover">
+                <h4 class="">Demo 11 - Resume</h4>
+                <p><img class="img-fluid  shadow-lg rounded" src="image/t11.jpg " alt=""></p>
+
+            </div>
+            <div class="col-6 col-lg-4 hover">
+                <h4 class="">Demo 12 - Portfolio
+                </h4>
+                <p><img class="img-fluid  shadow-lg rounded" src="image/t12.jpg " alt=""></p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <section id="info" class="container-fluid">
+        <br><br>
+        <div class="container-lg">
+            <div class="text-center ">
+                <p class=" justify-content-center align-items-center text-center text-white "><small
+                        class="bg-info px-3 p-1  rounded-pill">19 Pages! </small></p>
+                <h3>19 Pages!
+                    Inner Pages</h3>
+                <p class=" lead text-muted text-center">A group of pre-build inner page demos are available to get your
+                    started when
+                    <br> building out the rest of your project!
+                </p>
+            </div>
+
+            <div class="row ">
+                <div class="col-4">
+                    <div class="list-group">
+                        <h5 class="text-center">Company Pages</h5>
+                        <div class="list-group-item py-3  text-white">
+                            <a href="#" class="list-group-item list-group-item-action container-fluid">Basic Page<i
+                                    class="bi bi-arrow-right-short fw-bold "></i></a>
+                            <a href="#" class="list-group-item list-group-item-action container-fluid">About Page<i
+                                    class="bi bi-arrow-right-short fw-bold"></i></a>
+                            <a href="#" class="list-group-item list-group-item-action container-fluid">Pricing Page<i
+                                    class="bi bi-arrow-right-short fw-bold"></i></a>
+                            <a href="#" class="list-group-item list-group-item-action container-fluid">Contact Page<i
+                                    class="bi bi-arrow-right-short fw-bold"></i></a>
+                            <a href="#" class="list-group-item list-group-item-action container-fluid">Terms Page<i
+                                    class="bi bi-arrow-right-short fw-bold"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="list-group">
+                        <h5 class="text-center">Support Pages</h5>
+                        <div class="list-group-item py-3  text-white">
+                            <a href="" class="list-group-item list-group-item-action container-fluid">Help Center<i
+                                    class="bi bi-arrow-right-short fw-bold"></i></a>
+                            <a href="" class="list-group-item list-group-item-action container-fluid">Knowledgebase<i
+                                    class="bi bi-arrow-right-short fw-bold"></i></a>
+                            <a href="" class="list-group-item list-group-item-action container-fluid">Message Center<i
+                                    class="bi bi-arrow-right-short fw-bold"></i></a>
+                            <a href="" class="list-group-item list-group-item-action container-fluid">Support Ticket<i
+                                    class="bi bi-arrow-right-short fw-bold"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="list-group">
+                        <h5 class="text-center">Portfolio Pages</h5>
+                        <div class="list-group-item py-3  text-white">
+                            <a href="" class="list-group-item list-group-item-action container-fluid">Grid<i
+                                    class="bi bi-arrow-right-short fw-bold"></i></a>
+                            <a href="" class="list-group-item list-group-item-action container-fluid">Large Grid<i
+                                    class="bi bi-arrow-right-short fw-bold"></i></a>
+                            <a href="" class="list-group-item list-group-item-action container-fluid">Masonry<i
+                                    class="bi bi-arrow-right-short fw-bold"></i></a>
+                            <a href="" class="list-group-item list-group-item-action container-fluid">Case Study<i
+                                    class="bi bi-arrow-right-short fw-bold"></i></a>
+                            <a href="" class="list-group-item list-group-item-action container-fluid">Project<i
+                                    class="bi bi-arrow-right-short fw-bold"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mt-5">
+                    <div class="list-group">
+                        <h5 class="text-center">Careers Pages</h5>
+                        <div class="list-group-item py-3  text-white">
+                            <a href="" class="list-group-item list-group-item-action container-fluid">Careers List<i
+                                    class="bi bi-arrow-right-short fw-bold"></i></a>
+                            <a href="" class="list-group-item list-group-item-action container-fluid">Position Details<i
+                                    class="bi bi-arrow-right-short fw-bold"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mt-1">
+                    <div class="list-group">
+                        <h5 class="text-center">Blog Pages</h5>
+                        <div class="list-group-item py-3  text-white">
+                            <a href="" class="list-group-item list-group-item-action container-fluid">Overview<i
+                                    class="bi bi-arrow-right-short fw-bold"></i></a>
+                            <a href="" class="list-group-item list-group-item-action container-fluid">Post<i
+                                    class="bi bi-arrow-right-short fw-bold"></i></a>
+                            <a href="" class="list-group-item list-group-item-action container-fluid">Archive<i
+                                    class="bi bi-arrow-right-short fw-bold"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <div class="container-fluid row_image">
+        <div class="container-sm align-items-center  justify-content-center mt-5 text-center ">
+            <p class=" justify-content-center align-items-center text-center text-white "><small
+                    class="bg-info px-3 p-1  rounded-pill">Customizable! </small></p>
+            <h3>Header Examples</h3>
+            <p class=" lead text-muted text-center">
+                Build your own landing page by starting with one of these customizable header <br>
+                examples! You can customize the colors, content, borders, and more!
+            </p>
+        </div>
+
+        <div class="row my-5 text-center   justify-content-around align-items-center">
+            <div class="col-6 col-lg-4 hover">
+                <h4 class="">Demo 1 - Basic</h4>
+                <p><img class="img-fluid    shadow-lg rounded" src="image/t1.jpg " alt=""></p>
+
+            </div>
+            <div class="col-6 col-lg-4 hover">
+                <h4 class="">Demo 2 - Basic (Signup)</h4>
+                <p><img class="img-fluid  shadow-lg rounded" src="image/t2.jpg " alt=""></p>
+
+            </div>
+            <div class="col-6 col-lg-4 hover">
+                <h4 class="">Demo 3 - Graphic</h4>
+                <p><img class="img-fluid  shadow-lg rounded" src="image/t3.jpg " alt=""></p>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="row my-5 text-center   justify-content-around align-items-center">
+            <div class="col-6 col-lg-4 hover">
+                <h4 class="">Demo 4 - Graphic (Signup)</h4>
+                <p><img class="img-fluid    shadow-lg rounded" src="image/t4.jpg " alt=""></p>
+
+            </div>
+            <div class="col-6 col-lg-4 hover">
+                <h4 class="">Demo 5 - Inner Page</h4>
+                <p><img class="img-fluid  shadow-lg rounded" src="image/t5.jpg " alt=""></p>
+
+            </div>
+            <div class="col-6 col-lg-4 hover">
+                <h4 class="">Demo 6 - Nav Only</h4>
+                <p><img class="img-fluid  shadow-lg rounded" src="image/t6.jpg " alt=""></p>
+
+            </div>
+        </div>
+        <section id="documentation" class=" milieu_container">
+            <div class="container-fluid ">
+                <div class="container-sm align-items-center  justify-content-center mt-5 text-center ">
+                    <h3>Documentation</h3>
+                    <p class=" lead text-muted text-center">
+                        Comprehensive documentation includes usage instructions, component <br>
+                        reference, and utility class usage instructions
+                    </p>
+                </div>
+                <div class="row justify-content-center align-item-center">
+                    <div class="col-lg-4">
+                        <div class="text-center">
+                            <h1 class="display-1 ">70+</h1>
+                            <h6>Custom/Extended Components</h6>
+                            <p class="text-muted">We've extended and restyled Bootstrap's
+                                default components, and built a suite of new custom components.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="text-center">
+                            <h1 class="display-1 r">35+</h1>
+                            <h6>Pre-Built Page Examples</h6>
+                            <p class="text-muted">Our pre-built page examples are a perfect
+                                way to get inspired for creating new pages and views.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="text-center">
+                            <h1 class="display-1 ">100+</h1>
+                            <h6>Custom/Extended Utilites</h6>
+                            <p class="text-muted">We've extended and created new utility classes to give you more
+                                control over your content with minimal custom CSS.</p>
+                        </div>
+                    </div><br>
+                    <div class=" text-center">
+                        <a href="#documentation" class="btn btn-primary rounded-pill"> View Documentation</a>
+                    </div>
+
+                </div>
+
+            </div>
+            <br> <br>
+        </section>
+
+
+    </div>
+
+    <section id="" class=" last_container">
+        <div class="container-fluid ">
+            <div class="row ">
+                <div class="col-lg-3 mt-5">
+                    <div class="">
+                        <h3 class="text-muted fw-bold">SB UI Kit Pro</h3>
+
+                        <p class="text-muted">Build better websites</p>
+                        <div class="container-fluid icon1">
+                            <a href=""><i class="bi bi-twitter text-muted fw-bold"></i></a>
+                            <a href=""><i class="bi bi-reddit text-muted fw-bold"></i></a>
+                            <a href=""><i class="bi bi-facebook text-muted fw-bold"></i></a>
+                            <a href=""> <i class="bi bi-instagram text-muted fw-bold"></i></a>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-5">
+                    <div class="">
+                        <h4 class="text-muted ">PRODUCT</h4>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a class="nav-link text-muted " href="">Landing</a></li>
+                            <li class="nav-item"><a class="nav-link text-muted " href="">Pages</a></li>
+                            <li class="nav-item"><a class="nav-link text-muted " href="">Sections</a></li>
+                            <li class="nav-item"><a class="nav-link text-muted " href="#documentation">Documentation</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link text-muted " href="">Changelog</a></li>
+
+                        </ul>
+
+
+
+                    </div>
+                </div>
+                <div class="col-lg-2 mt-5">
+                    <div class="">
+                        <h4 class="text-muted ">TECHNICAL</h4>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a class="nav-link text-muted " href="#documentation">Documentation</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link text-muted " href="">Changelog</a></li>
+                            <li class="nav-item"><a class="nav-link text-muted " href="">Theme Customizer</a></li>
+                            <li class="nav-item"><a class="nav-link text-muted " href="">UI Kit</a></li>
+
+                        </ul>
+
+
+
+                    </div>
+                </div>
+                <div class="col-lg-2 mt-5">
+                    <div class="">
+                        <h4 class="text-muted ">INCLUDES</h4>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a class="nav-link text-muted " href="">Utilities</a></li>
+                            <li class="nav-item"><a class="nav-link text-muted " href="">Components</a></li>
+                            <li class="nav-item"><a class="nav-link text-muted " href="">Layouts</a></li>
+                            <li class="nav-item"><a class="nav-link text-muted " href="">Code Samples</a></li>
+                            <li class="nav-item"><a class="nav-link text-muted " href="">Products</a></li>
+                            <li class="nav-item"><a class="nav-link text-muted " href="">Affiliates</a></li>
+                            <li class="nav-item"><a class="nav-link text-muted " href="">Updates</a></li>
+
+                        </ul>
+
+
+
+                    </div>
+                </div>
+                <div class="col-lg-2 mt-5">
+                    <div class="">
+                        <h4 class="text-muted ">LEGAL</h4>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a class="nav-link text-muted " href="">Privacy Policy</a></li>
+                            <li class="nav-item"><a class="nav-link text-muted " href="">Terms and</a></li>
+                            <li class="nav-item"><a class="nav-link text-muted " href="">Conditions </a></li>
+                            <li class="nav-item"><a class="nav-link text-muted " href="">Licenset</a></li>
+
+                        </ul>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <br> <br>
+    </section>
+    <hr>
+    <div class="container-fluid ">
+        <div class="row text-center">
+            <div class="col-lg-6 mt-5">
+                <div class="">
+
+                    <p class="text-muted">Copyright © Your Website 2020</p>
+
+                </div>
+            </div>
+            <div class="col-lg-6 mt-5">
+                <div class="">
+
+                    <p class="text-muted"><a class="text-muted a-last" href="">Privacy Policy </a>. <a
+                            class="a-last text-muted" href="">Terms & Conditions</a></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
